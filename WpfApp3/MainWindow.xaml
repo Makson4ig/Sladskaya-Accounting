@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Складской учет" Height="317" Width="504" MinHeight="317" MinWidth="504"  MaxHeight="317" MaxWidth="504" Loaded="Window_Loaded">
+    <Grid Background="Lavender">
+        <Button Content="Add" HorizontalAlignment="Left" Margin="10,211,0,0" VerticalAlignment="Top" Width="70" Click="Add_Click"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="10,243,0,0" VerticalAlignment="Top" Width="70" Click="Delete_Click" RenderTransformOrigin="0.523,-0.997"/>
+        <DataGrid Name="DateGrid" HorizontalAlignment="Left" Height="286" Margin="90,0,0,0" VerticalAlignment="Top" Width="406" />
+        <Button x:Name="PersonBtn" Content="Выдан" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="70" Click="PersonBtn_Click"/>
+        <TextBox x:Name="PersonTextBox" HorizontalAlignment="Left" Height="23" Margin="5,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+    </Grid>
+</Window>
+
